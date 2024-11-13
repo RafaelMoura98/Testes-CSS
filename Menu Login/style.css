@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    color: white;
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(imagens/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+h2{
+    font-size: 26px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.9s ease-in-out;
+}
+
+h2:hover{
+    transform:scale(1.08);
+    transition: transform 0.9s ease-in-out;
+}
+
+h2::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: 35px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    transition: 0.9s ease-in-out;
+}
+h2:hover::after{
+    width: 100%;
+}
+h2::before{
+    content:" ";
+    position: absolute;
+    transform:scaleX(0);
+    transition: 0.9s;
+}
+
+.login{
+    width: 450px;
+    height: 500px;
+    background-color: #f5e6e685;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 12px;
+}
+.box-img{
+    display: flex;
+    align-items: center;
+}
+
+.login .boneco{
+    background-image: url(imagens/boneco.png);
+    background-position: center;
+    background-size: cover;
+    width: 85px;
+    height: 85px;
+    margin-right: 95px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+.boneco:hover{
+    transform:scale(1.03);
+    transition: transform 0.9s ease-in-out;
+}
+
+.login label{
+    display: block;
+    color:aliceblue;
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+.login input[type='text'],input[type='password']{
+    width: 100%;
+    line-height: 35px;
+    border-radius: 20px;
+    border: none;
+    color:black;
+    text-indent: 12px;
+}
+
+.login input[type='text']{
+    margin-bottom: 20px;
+}
+.login a{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login input[type='submit']{
+    display:block;
+    width: 100%;
+    padding: 25px,40px;
+    line-height: 50px;
+    font-size: 25px;
+    background-color: tomato;
+    color: aliceblue;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.login input[type='submit']:hover{
+    transform:scale(1.03);
+    transition: transform 0.7s ease-in-out;
+    background-color: rgb(255, 38, 0);
+}
+
+.login input[type='checkbox']{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.Usuario{
+    margin-top: 15px;
+}
